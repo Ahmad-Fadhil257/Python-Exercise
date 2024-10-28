@@ -1,8 +1,13 @@
 print('MENGHITUNG VOLUME BOLA')
 
-jari_jari = int(input("Masukkan ukuran jari jari (cm) : "))
+def bola():
+     jari_jari = int(input("Masukkan ukuran jari jari (cm) : "))
 
-volume = int(4/3 * 3.14 * jari_jari ** 3)
+     volume = lambda v : int(4/3 * 3.14 * v ** 3)
+     
+     print (f"Volume bola adalah : {volume(jari_jari)} cm")
+     print (f"Volume bola adalah : {volume(jari_jari) / 100} m")
 
-print (f"Volume bola adalah : {volume} cm")
-print (f"Volume bola adalah : {volume / 100} m")
+bola()
+bola()
+bola()

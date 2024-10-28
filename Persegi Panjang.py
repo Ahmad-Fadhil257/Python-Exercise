@@ -2,12 +2,16 @@ print('==================================')
 print('MENCARI LUAS DAN KELILING PERSEGI PANJANG')
 print('==================================')
 
-pj = int(input('Masukan nilai panjang\t: '))
-lb = int(input('Masukkan nilai lebar \t:'))
+def persegi_panjang():
+     pj = int(input('Masukan nilai panjang\t: '))
+     lb = int(input('Masukkan nilai lebar \t:'))
 
-luas = pj * lb
+     luas = lambda a,b: pj * lb
 
-Keliling = 2 * pj * lb
+     Keliling = lambda a,b: 2 * pj * lb
 
-print('Luas persegi panjang\t\t:',luas,'cm2')
-print('Keliling persegi panjang\t:',Keliling,'cm2')
+     print(f'Luas persegi panjang\t\t: {luas(pj,lb)} cm2')
+     print(f'Keliling persegi panjang\t: {Keliling(pj,lb)} cm2')
+persegi_panjang()
+persegi_panjang()
+persegi_panjang()

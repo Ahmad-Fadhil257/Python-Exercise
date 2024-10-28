@@ -2,11 +2,16 @@ print('==================================')
 print('MENCARI LUAS DAN KELILING PERSEGI')
 print('==================================')
 
-sisi = int(input('Masukan nilai sisi\t: '))
+def persegi():
+     sisi = int(input('Masukan nilai sisi\t: '))
 
-Luas = sisi * sisi
+     Luas = lambda a: sisi * sisi
 
-Keliling = 4 * sisi
+     Keliling = lambda a: 4 * sisi
 
-print('Luas persegi\t\t:',Luas,'cm2')
-print('Keliling persegi\t:',Keliling,'cm2')
+     print(f'Luas persegi\t\t:{Luas(sisi)}cm2')
+     print(f'Keliling persegi\t:{Keliling(sisi)}cm2')
+
+persegi()
+persegi()
+persegi()

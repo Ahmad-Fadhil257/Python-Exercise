@@ -2,14 +2,19 @@ print('=============================')
 print('\tSegitiga')
 print('=============================')
 
-Alas = int(input('Masukan nilai Alas\t: '))
-Tinggi = int(input('Masukan nilai Tinggi\t: '))
+def segitiga():
+     Alas = int(input('Masukan nilai Alas\t: '))
+     Tinggi = int(input('Masukan nilai Tinggi\t: '))
 
-Luas = 1/2 * Alas * Tinggi
+     Luas = lambda a,b: 1/2 * Alas * Tinggi
 
-print('Luas\t\t:',Luas,'cm2')
+     print(f'Luas\t\t:{Luas(Alas,Tinggi)}cm2')
 
-Sisi = int(input('Masukan nilai Sisi\t: '))
+     Sisi = int(input('Masukan nilai Sisi\t: '))
 
-Keliling = 3 * Sisi
-print('Keliling\t\t:',Keliling,'cm2')
+     Keliling = lambda c: 3 * Sisi
+     print(f'Keliling\t\t:{Keliling(Sisi)}cm2')
+     
+segitiga()
+segitiga()
+segitiga()

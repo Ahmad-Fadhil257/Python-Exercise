@@ -2,26 +2,19 @@ print('=========================')
 print('\tKerucut')
 print('=========================')
 
-jr2 = int(input('masukan nilai jari-jari\t:'))
-t = int(input('Masukkan nilai tinggi\t:'))
+def kerucut():
+    jari2 = int(input('masukan nilai jari-jari\t:'))
+    tinggi = int(input('Masukkan nilai tinggi\t:'))
+    sisi = int(input('Masukkan nilai sisi\t:'))
 
-volume = 3.14 * jr2 * jr2 * t
+    volume = lambda jr2,t: int(3.14 * jr2 * jr2 * t)
+    lp2 = lambda jr2,s: int(3.14 * jr2 * s)
+    lp = lambda jr2: int(3.14 * jr2 * jr2)
 
-lp = 3.14 * jr2 * jr2
+    print(f'volume\t\t: {volume(jari2,tinggi)} cm2')
+    print(f'volume\t\t: {int(volume(jari2,tinggi) / 10)} m2')
+    print(f'luas permukaan\t: {lp2(jari2,sisi) + lp(jari2)} cm2')
 
-print('volume\t\t:',volume,'cm2')
-print('volume\t:',volume / 10, 'm2')
-
-tanya = str(input('apakah ingin mencari luas permukaan? [y/t] : '))
-if tanya == 'y' :
-    stry = int(input('Masukkan nilai sisi\t:'))
-
-    lp2 = 3.14 * jr2 * stry
-    
-    print('luas permukaan\t\t:',lp2 + lp,'cm2')
-    print('TERIMA KASIH')
-elif tanya == 't' :
-    print('OK terima Kasih')
-
-else:
-    print('pilihan tidak ada')
+kerucut()
+kerucut()
+kerucut()

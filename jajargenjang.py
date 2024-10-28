@@ -2,17 +2,18 @@ print ("============")
 print ('Jajar genjang')
 print ("------------")
 
-alas = int(input('masukan nilai alas\t:'))
-tinggi = int(input('masukan nilai tinggi\t:'))
+def Jajar_genjang():
+     alas = int(input('masukan nilai alas\t:'))
 
-luas = alas * tinggi
+     tinggi = int(input('masukan nilai tinggi\t:'))
 
-print('luas\t\t:',luas,'cm2')
+     sisi = int(input('Masukkan nilai sisi\t:'))
 
-sisi = int(input('Masukkan nilai sisi\t:'))
-keliling = 3 * sisi
-print ('keliling\t\t:',keliling,'cm2')
+     luas = lambda a,t: alas * tinggi
+     keliling = lambda s: 3 * sisi
 
-print ('=='*20)
-print ('\tTerima Kasih')
-print ('=='*20)
+     print('luas\t\t\t:',luas(alas,tinggi),'cm2')
+     print ('keliling\t\t:',keliling(sisi),'cm2')
+Jajar_genjang()
+Jajar_genjang()
+Jajar_genjang()
